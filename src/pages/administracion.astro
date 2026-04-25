@@ -12,7 +12,7 @@ import RevealScript from '../components/RevealScript.astro';
       <div class="wrap">
         <div class="reveal">
           <div class="crumbs">
-            <a href="/">Inicio</a>
+            <a href={import.meta.env.BASE_URL}>Inicio</a>
             <span>/</span>
             <span>Panel administración</span>
           </div>
@@ -147,7 +147,7 @@ import RevealScript from '../components/RevealScript.astro';
             <h3>¿Querés ver el panel en acción?</h3>
             <p>Coordinamos una demo con el equipo de tu administración y te mostramos cómo se opera un edificio nuevo desde el día uno.</p>
           </div>
-          <a href="/#contacto" class="btn btn-primary">Agendar demo <span class="btn-arrow">→</span></a>
+          <a href={`${import.meta.env.BASE_URL}#contacto`} class="btn btn-primary">Agendar demo <span class="btn-arrow">→</span></a>
         </div>
       </div>
     </section>

@@ -1,6 +1,8 @@
 import { defineConfig } from 'astro/config';
 
 export default defineConfig({
-  site: 'https://nucleo.build',
+  site: 'https://pablomanzoni.github.io',
+  base: '/nucleo/',
+  trailingSlash: 'ignore',
   compressHTML: true,
 });

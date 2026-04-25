@@ -1,17 +1,18 @@
 ---
+const BASE = import.meta.env.BASE_URL;
 ---
 <header class="nav">
   <div class="wrap nav-row">
-    <a href="/" class="brand">
+    <a href={BASE} class="brand">
       <span class="brand-mark">N</span>
       <span>Nucleo / edificios</span>
     </a>
     <nav class="nav-links">
-      <a href="/residentes">Residentes</a>
-      <a href="/administracion">Administración</a>
-      <a href="/#proceso">Proceso</a>
-      <a href="/#confianza">Confianza</a>
+      <a href={`${BASE}residentes`}>Residentes</a>
+      <a href={`${BASE}administracion`}>Administración</a>
+      <a href={`${BASE}#proceso`}>Proceso</a>
+      <a href={`${BASE}#confianza`}>Confianza</a>
     </nav>
-    <a href="/#contacto" class="nav-cta">Agendar demo →</a>
+    <a href={`${BASE}#contacto`} class="nav-cta">Agendar demo →</a>
   </div>
 </header>
