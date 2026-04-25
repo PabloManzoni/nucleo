@@ -1,0 +1,30 @@
+---
+---
+<script is:inline>
+  document.documentElement.classList.add('js');
+
+  const els = document.querySelectorAll('.reveal');
+
+  const showIfVisible = (el) => {
+    const r = el.getBoundingClientRect();
+    const vh = window.innerHeight || document.documentElement.clientHeight;
+    if (r.top < vh && r.bottom > 0) {
+      el.classList.add('in');
+      return true;
+    }
+    return false;
+  };
+  els.forEach(showIfVisible);
+
+  const io = new IntersectionObserver((entries) => {
+    for (const e of entries) {
+      if (e.isIntersecting) {
+        e.target.classList.add('in');
+        io.unobserve(e.target);
+      }
+    }
+  }, { threshold: 0.05 });
+  els.forEach(el => { if (!el.classList.contains('in')) io.observe(el); });
+
+  setTimeout(() => els.forEach(el => el.classList.add('in')), 1200);
+</script>

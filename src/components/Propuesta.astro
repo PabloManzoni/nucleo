@@ -1,0 +1,338 @@
+---
+---
+<section id="propuesta" class="dark">
+  <div class="wrap">
+    <div class="section-head reveal">
+      <span class="eyebrow">La propuesta</span>
+      <h2 style="color:#ECECE6;">Una sola capa que conecta todo el edificio.</h2>
+      <p class="lede" style="color:#B7B9B3;">
+        Las bombas de agua suben a horario. El portón se abre solo cuando reconoce el auto.
+        La parrilla queda climatizada para la reserva del sábado. El riego del patio arranca a las seis de la tarde.
+        Cada subsistema, hablando el mismo idioma. Tocá cualquier punto del edificio para ver qué hace.
+      </p>
+    </div>
+
+    <div class="propuesta-grid">
+      <div class="diagram-shell reveal">
+        <svg class="diagram" viewBox="0 0 900 1100" xmlns="http://www.w3.org/2000/svg" aria-label="Diagrama del edificio integrado">
+          <defs>
+            <pattern id="grid" width="40" height="40" patternUnits="userSpaceOnUse">
+              <path d="M 40 0 L 0 0 0 40" fill="none" stroke="#1A1D22" stroke-width="1"/>
+            </pattern>
+            <linearGradient id="line-grad" x1="0" x2="1">
+              <stop offset="0" stop-color="oklch(0.6 0.13 195)" stop-opacity="0"/>
+              <stop offset="0.5" stop-color="oklch(0.65 0.13 195)" stop-opacity="1"/>
+              <stop offset="1" stop-color="oklch(0.6 0.13 195)" stop-opacity="0"/>
+            </linearGradient>
+            <radialGradient id="dot-glow" cx="0.5" cy="0.5" r="0.5">
+              <stop offset="0" stop-color="oklch(0.7 0.14 195)" stop-opacity=".35"/>
+              <stop offset="1" stop-color="oklch(0.7 0.14 195)" stop-opacity="0"/>
+            </radialGradient>
+            <clipPath id="garage-clip">
+              <rect x="660" y="820" width="200" height="130"/>
+            </clipPath>
+            <clipPath id="amenities-clip">
+              <rect x="40" y="820" width="200" height="130"/>
+            </clipPath>
+          </defs>
+          <rect width="900" height="1100" fill="url(#grid)" />
+
+          <g class="building" stroke="#3A3D43" stroke-width="1" fill="none">
+            <line x1="40" y1="950" x2="860" y2="950" stroke="#5A5E66"/>
+            <rect class="b-main" x="240" y="140" width="420" height="810" fill="#13161B" stroke="#2A2D33"/>
+            <line x1="240" y1="275" x2="660" y2="275"/>
+            <line x1="240" y1="410" x2="660" y2="410"/>
+            <line x1="240" y1="545" x2="660" y2="545"/>
+            <line x1="240" y1="680" x2="660" y2="680"/>
+            <line x1="240" y1="815" x2="660" y2="815"/>
+            <line class="b-spine" x1="450" y1="140" x2="450" y2="950" stroke="#2A2D33" stroke-dasharray="3 4"/>
+            <rect class="b-amenities" x="40" y="820" width="200" height="130" fill="#13161B" stroke="#2A2D33"/>
+            <rect class="b-garage" x="660" y="820" width="200" height="130" fill="#13161B" stroke="#2A2D33"/>
+            <g stroke="#2A2D33" class="windows-marks">
+              <line x1="288" y1="207" x2="328" y2="207"/><line x1="368" y1="207" x2="408" y2="207"/><line x1="488" y1="207" x2="528" y2="207"/><line x1="568" y1="207" x2="608" y2="207"/>
+              <line x1="288" y1="342" x2="328" y2="342"/><line x1="368" y1="342" x2="408" y2="342"/><line x1="488" y1="342" x2="528" y2="342"/><line x1="568" y1="342" x2="608" y2="342"/>
+              <line x1="288" y1="477" x2="328" y2="477"/><line x1="368" y1="477" x2="408" y2="477"/><line x1="488" y1="477" x2="528" y2="477"/><line x1="568" y1="477" x2="608" y2="477"/>
+              <line x1="288" y1="612" x2="328" y2="612"/><line x1="368" y1="612" x2="408" y2="612"/><line x1="488" y1="612" x2="528" y2="612"/><line x1="568" y1="612" x2="608" y2="612"/>
+              <line x1="288" y1="747" x2="328" y2="747"/><line x1="368" y1="747" x2="408" y2="747"/><line x1="488" y1="747" x2="528" y2="747"/><line x1="568" y1="747" x2="608" y2="747"/>
+            </g>
+          </g>
+
+          <g class="ambient ambient-windows" pointer-events="none">
+            <rect class="win" x="286" y="205" width="44" height="4" rx="1"/>
+            <rect class="win" x="366" y="205" width="44" height="4" rx="1"/>
+            <rect class="win" x="486" y="205" width="44" height="4" rx="1"/>
+            <rect class="win" x="566" y="205" width="44" height="4" rx="1"/>
+            <rect class="win" x="286" y="340" width="44" height="4" rx="1"/>
+            <rect class="win" x="366" y="340" width="44" height="4" rx="1"/>
+            <rect class="win" x="486" y="340" width="44" height="4" rx="1"/>
+            <rect class="win" x="566" y="340" width="44" height="4" rx="1"/>
+            <rect class="win" x="286" y="475" width="44" height="4" rx="1"/>
+            <rect class="win" x="366" y="475" width="44" height="4" rx="1"/>
+            <rect class="win" x="486" y="475" width="44" height="4" rx="1"/>
+            <rect class="win" x="566" y="475" width="44" height="4" rx="1"/>
+            <rect class="win" x="286" y="610" width="44" height="4" rx="1"/>
+            <rect class="win" x="366" y="610" width="44" height="4" rx="1"/>
+            <rect class="win" x="486" y="610" width="44" height="4" rx="1"/>
+            <rect class="win" x="566" y="610" width="44" height="4" rx="1"/>
+            <rect class="win" x="286" y="745" width="44" height="4" rx="1"/>
+            <rect class="win" x="366" y="745" width="44" height="4" rx="1"/>
+            <rect class="win" x="486" y="745" width="44" height="4" rx="1"/>
+            <rect class="win" x="566" y="745" width="44" height="4" rx="1"/>
+          </g>
+
+          <g class="ambient ambient-hall" pointer-events="none">
+            <rect class="hall-glow" x="260" y="822" width="380" height="125" rx="2"/>
+          </g>
+
+          <g class="ambient ambient-garage" pointer-events="none" clip-path="url(#garage-clip)">
+            <rect class="car" x="856" y="893" width="26" height="12" rx="2"/>
+            <rect class="car-headlight" x="852" y="896" width="3" height="6" rx="1"/>
+          </g>
+
+          <g class="ambient ambient-amenities" pointer-events="none" clip-path="url(#amenities-clip)">
+            <rect class="amen-glow" x="50" y="830" width="180" height="110" rx="2"/>
+          </g>
+
+          <g class="ambient ambient-azotea" pointer-events="none">
+            <circle class="tank-pulse" cx="450" cy="120" r="14" fill="oklch(0.7 0.14 195)" fill-opacity="0"/>
+          </g>
+
+          <g class="conn-lines" stroke="url(#line-grad)" stroke-width="1.5" fill="none">
+            <path d="M 140 870 Q 220 700 340 430" />
+            <path d="M 760 870 Q 700 760 580 600" />
+            <path d="M 450 135 Q 450 128 450 122" />
+            <path d="M 140 880 L 760 880" stroke-dasharray="2 5"/>
+          </g>
+
+          <g class="nodes" font-family="JetBrains Mono, monospace" font-size="11" fill="#B7B9B3" letter-spacing=".05em">
+            <g class="node" data-node="amenities" data-tooltip="Amenities" tabindex="0" role="button" aria-label="Ver features de amenities">
+              <circle class="node-glow" cx="140" cy="890" r="22" fill="url(#dot-glow)"/>
+              <circle class="node-hit" cx="140" cy="890" r="26" fill="transparent"/>
+              <circle class="node-halo" cx="140" cy="890" r="13" fill="none" stroke="oklch(0.7 0.14 195)" stroke-opacity=".25" stroke-width="1.5"/>
+              <circle class="node-pulse" cx="140" cy="890" r="11" fill="none" stroke="oklch(0.65 0.13 195)" stroke-opacity=".5"/>
+              <circle class="node-dot" cx="140" cy="890" r="6" fill="oklch(0.7 0.14 195)"/>
+              <text x="50" y="802" fill="#ECECE6">amenities</text>
+              <text x="50" y="820">SUM · gym · parrilla · patio</text>
+            </g>
+            <g class="node" data-node="garage" data-tooltip="Garage" tabindex="0" role="button" aria-label="Ver features de garage">
+              <circle class="node-glow" cx="760" cy="890" r="22" fill="url(#dot-glow)"/>
+              <circle class="node-hit" cx="760" cy="890" r="26" fill="transparent"/>
+              <circle class="node-halo" cx="760" cy="890" r="13" fill="none" stroke="oklch(0.7 0.14 195)" stroke-opacity=".25" stroke-width="1.5"/>
+              <circle class="node-pulse" cx="760" cy="890" r="11" fill="none" stroke="oklch(0.65 0.13 195)" stroke-opacity=".5"/>
+              <circle class="node-dot" cx="760" cy="890" r="6" fill="oklch(0.7 0.14 195)"/>
+              <text x="670" y="802" fill="#ECECE6">garage</text>
+              <text x="670" y="820">portones · cocheras</text>
+            </g>
+            <g class="node" data-node="azotea" data-tooltip="Azotea" tabindex="0" role="button" aria-label="Ver features de azotea">
+              <circle class="node-glow" cx="450" cy="120" r="22" fill="url(#dot-glow)"/>
+              <circle class="node-hit" cx="450" cy="120" r="26" fill="transparent"/>
+              <circle class="node-halo" cx="450" cy="120" r="13" fill="none" stroke="oklch(0.7 0.14 195)" stroke-opacity=".25" stroke-width="1.5"/>
+              <circle class="node-pulse" cx="450" cy="120" r="11" fill="none" stroke="oklch(0.65 0.13 195)" stroke-opacity=".5"/>
+              <circle class="node-dot" cx="450" cy="120" r="6" fill="oklch(0.7 0.14 195)"/>
+              <text text-anchor="middle" x="450" y="62" fill="#ECECE6">azotea</text>
+              <text text-anchor="middle" x="450" y="80">tanques · bombas · riego</text>
+            </g>
+            <g class="node" data-node="apartamentos" data-tooltip="Apartamentos" tabindex="0" role="button" aria-label="Ver features de apartamentos">
+              <circle class="node-glow" cx="340" cy="430" r="20" fill="url(#dot-glow)"/>
+              <circle class="node-hit" cx="340" cy="430" r="26" fill="transparent"/>
+              <circle class="node-halo" cx="340" cy="430" r="11" fill="none" stroke="oklch(0.7 0.14 195)" stroke-opacity=".25" stroke-width="1.5"/>
+              <circle class="node-pulse" cx="340" cy="430" r="9" fill="none" stroke="oklch(0.65 0.13 195)" stroke-opacity=".5"/>
+              <circle class="node-dot" cx="340" cy="430" r="5" fill="oklch(0.7 0.14 195)"/>
+              <text x="50" y="402" fill="#ECECE6">apartamentos</text>
+              <text x="50" y="420">luces · clima · accesos</text>
+              <line x1="190" y1="416" x2="335" y2="427" stroke="#3A3D43" stroke-dasharray="2 4"/>
+            </g>
+            <g class="node" data-node="hall" data-tooltip="Hall y accesos" tabindex="0" role="button" aria-label="Ver features de hall y accesos">
+              <circle class="node-glow" cx="560" cy="600" r="20" fill="url(#dot-glow)"/>
+              <circle class="node-hit" cx="560" cy="600" r="26" fill="transparent"/>
+              <circle class="node-halo" cx="560" cy="600" r="11" fill="none" stroke="oklch(0.7 0.14 195)" stroke-opacity=".25" stroke-width="1.5"/>
+              <circle class="node-pulse" cx="560" cy="600" r="9" fill="none" stroke="oklch(0.65 0.13 195)" stroke-opacity=".5"/>
+              <circle class="node-dot" cx="560" cy="600" r="5" fill="oklch(0.7 0.14 195)"/>
+              <text x="690" y="572" fill="#ECECE6">hall · accesos</text>
+              <text x="690" y="590">NFC · QR · cámaras</text>
+              <line x1="685" y1="586" x2="565" y2="598" stroke="#3A3D43" stroke-dasharray="2 4"/>
+            </g>
+            <g class="node" data-node="red" data-tooltip="Red dedicada" tabindex="0" role="button" aria-label="Ver features de red dedicada">
+              <circle class="node-glow" cx="450" cy="920" r="20" fill="url(#dot-glow)"/>
+              <circle class="node-hit" cx="450" cy="920" r="26" fill="transparent"/>
+              <circle class="node-halo" cx="450" cy="920" r="11" fill="none" stroke="oklch(0.7 0.14 195)" stroke-opacity=".25" stroke-width="1.5"/>
+              <circle class="node-pulse" cx="450" cy="920" r="9" fill="none" stroke="oklch(0.65 0.13 195)" stroke-opacity=".5"/>
+              <circle class="node-dot" cx="450" cy="920" r="5" fill="oklch(0.7 0.14 195)"/>
+              <text text-anchor="middle" x="450" y="1010" fill="#ECECE6">red dedicada</text>
+              <text text-anchor="middle" x="450" y="1028">wifi mesh · vlan domótica</text>
+              <line x1="450" y1="998" x2="450" y2="930" stroke="#3A3D43" stroke-dasharray="2 4"/>
+            </g>
+          </g>
+
+          <g font-family="JetBrains Mono, monospace" font-size="10" fill="#5A5E66" letter-spacing=".08em">
+            <text x="40" y="32">CAPA ÚNICA</text>
+            <text x="40" y="48" fill="#8B8F97">una topología, todos los subsistemas</text>
+          </g>
+        </svg>
+
+        <div class="diag-tooltip" role="tooltip" aria-hidden="true"></div>
+      </div>
+
+      <aside class="node-panel reveal" id="node-panel" data-active="default">
+        <div class="np-default">
+          <div class="np-eyebrow">Tocá un punto</div>
+          <h3 class="np-title">Cada subsistema, conectado.</h3>
+          <p class="np-text">Seis zonas del edificio comparten una misma topología. Hacé click en cualquier nodo del diagrama para ver ejemplos concretos de lo que opera en cada una.</p>
+          <ul class="np-zones">
+            <li><span></span>Amenities · SUM, gym, parrilla, patio</li>
+            <li><span></span>Garage · portones, cocheras</li>
+            <li><span></span>Azotea · tanques, bombas, riego</li>
+            <li><span></span>Apartamentos · luces, clima, accesos</li>
+            <li><span></span>Hall · NFC, QR, cámaras</li>
+            <li><span></span>Red dedicada · wifi mesh, vlan</li>
+          </ul>
+        </div>
+      </aside>
+    </div>
+  </div>
+</section>
+
+<script>
+  type NodeKey = 'amenities' | 'garage' | 'azotea' | 'apartamentos' | 'hall' | 'red';
+  interface NodeData { title: string; subtitle: string; items: string[]; }
+
+  const NODES: Record<NodeKey, NodeData> = {
+    amenities: {
+      title: 'Amenities',
+      subtitle: 'SUM · gym · parrilla · patio',
+      items: [
+        'Reservas con escenarios predefinidos por espacio',
+        'Acceso al espacio reservado por app o NFC',
+        'Climatización e iluminación activadas al llegar',
+        'Riego automatizado de patios y jardines',
+        'Iluminación arquitectónica programable',
+        'Predicción de disponibilidad real',
+      ],
+    },
+    garage: {
+      title: 'Garage',
+      subtitle: 'portones · cocheras',
+      items: [
+        'Apertura del portón al detectar el auto',
+        'Reconocimiento de matrículas',
+        'Detección de ocupación de cocheras en tiempo real',
+        'Cocheras de visitas con tiempo asignado',
+        'Iluminación al ingresar el vehículo',
+        'Registro de entrada y salida',
+      ],
+    },
+    azotea: {
+      title: 'Azotea',
+      subtitle: 'tanques · bombas · riego',
+      items: [
+        'Control horario de bombas de agua',
+        'Riego automatizado de patios y jardines',
+        'Sensores de fuga en zona de bombas',
+        'Monitoreo de niveles de tanques',
+        'Alertas en tiempo real ante eventos',
+      ],
+    },
+    apartamentos: {
+      title: 'Apartamentos',
+      subtitle: 'luces · clima · accesos',
+      items: [
+        'Acceso sin llave (NFC, app)',
+        'Control de luces, climatización y cortinas por ambiente',
+        'Llegada inteligente: ascensor + clima + luces',
+        'Sensor de calidad del aire y detección de monóxido',
+        'Escenas guardadas (salir, dormir, recibir)',
+        'Histórico y alertas de consumo',
+      ],
+    },
+    hall: {
+      title: 'Hall y accesos',
+      subtitle: 'NFC · QR · cámaras',
+      items: [
+        'Acceso al edificio sin llave (NFC, QR, app)',
+        'Invitaciones digitales con expiración',
+        'Portero digital con video desde la app',
+        'Cámaras con detección de eventos relevantes',
+        'Escenarios estéticos de bienvenida',
+        'Logs auditables de cada ingreso',
+      ],
+    },
+    red: {
+      title: 'Red dedicada',
+      subtitle: 'wifi mesh · vlan domótica',
+      items: [
+        'Wifi mesh en todo el edificio',
+        'VLAN aislada para domótica (seguridad)',
+        'Red de invitados separada con expiración',
+        'Red de amenities con QR temporal',
+        'Monitoreo de salud de la red',
+        'Priorización de tráfico en zonas críticas',
+      ],
+    },
+  };
+
+  const shell = document.querySelector<HTMLElement>('#propuesta .diagram-shell');
+  const svg = shell?.querySelector<SVGSVGElement>('svg.diagram');
+  const panel = document.getElementById('node-panel');
+  const tooltip = shell?.querySelector<HTMLElement>('.diag-tooltip');
+  const nodes = document.querySelectorAll<SVGGElement>('#propuesta .node');
+
+  const renderNode = (key: NodeKey) => {
+    const data = NODES[key];
+    if (!panel || !data) return;
+    panel.dataset.active = key;
+    panel.innerHTML = `
+      <div class="np-content">
+        <div class="np-eyebrow">${data.subtitle}</div>
+        <h3 class="np-title">${data.title}</h3>
+        <ul class="np-features">
+          ${data.items.map((it) => `<li>${it}</li>`).join('')}
+        </ul>
+      </div>
+    `;
+  };
+
+  const showTooltip = (g: SVGGElement) => {
+    if (!tooltip || !shell) return;
+    const text = g.dataset.tooltip;
+    if (!text) return;
+    const dot = g.querySelector<SVGCircleElement>('.node-dot');
+    if (!dot) return;
+    const dotRect = dot.getBoundingClientRect();
+    const shellRect = shell.getBoundingClientRect();
+    tooltip.textContent = text;
+    tooltip.style.left = `${dotRect.left - shellRect.left + dotRect.width / 2}px`;
+    tooltip.style.top = `${dotRect.top - shellRect.top - 14}px`;
+    tooltip.dataset.show = 'true';
+    tooltip.setAttribute('aria-hidden', 'false');
+  };
+  const hideTooltip = () => {
+    if (!tooltip) return;
+    tooltip.dataset.show = 'false';
+    tooltip.setAttribute('aria-hidden', 'true');
+  };
+
+  nodes.forEach((g) => {
+    const key = g.dataset.node as NodeKey | undefined;
+    if (!key) return;
+    g.addEventListener('click', () => {
+      nodes.forEach((n) => n.classList.remove('is-active'));
+      g.classList.add('is-active');
+      if (svg) svg.dataset.activeZone = key;
+      renderNode(key);
+      hideTooltip();
+      if (window.matchMedia('(max-width: 999px)').matches) {
+        panel?.scrollIntoView({ behavior: 'smooth', block: 'start' });
+      }
+    });
+    g.addEventListener('mouseenter', () => showTooltip(g));
+    g.addEventListener('mouseleave', hideTooltip);
+    g.addEventListener('focus', () => showTooltip(g));
+    g.addEventListener('blur', hideTooltip);
+    g.addEventListener('keydown', (e) => {
+      if (e.key === 'Enter' || e.key === ' ') {
+        e.preventDefault();
+        (g as unknown as HTMLElement).click();
+      }
+    });
+  });
+</script>

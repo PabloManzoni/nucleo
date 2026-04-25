@@ -1,0 +1,146 @@
+---
+import BaseLayout from '../layouts/BaseLayout.astro';
+import SubpageNav from '../components/SubpageNav.astro';
+import Footer from '../components/Footer.astro';
+import RevealScript from '../components/RevealScript.astro';
+---
+<BaseLayout title="App residente — Nucleo" description="Lo que el propietario tiene en el bolsillo. Acceso, control, reservas y llegada inteligente, en una sola app.">
+  <SubpageNav />
+  <main>
+
+    <section class="subpage-hero">
+      <div class="wrap">
+        <div class="reveal">
+          <div class="crumbs">
+            <a href="/">Inicio</a>
+            <span>/</span>
+            <span>App residente</span>
+          </div>
+          <h1>Una sola app para vivir en el edificio.</h1>
+          <p class="lede">Acceso sin llaves, control del apartamento, reservas con activación, llegada inteligente, intercom digital y consumo a la vista. Diseñada para no notarse.</p>
+          <div class="meta">
+            <div><div class="k">Plataformas</div><div class="v">iOS · Android</div></div>
+            <div><div class="k">Acceso físico</div><div class="v">NFC · QR · proximidad</div></div>
+            <div><div class="k">Offline</div><div class="v">Funciones críticas sin red</div></div>
+            <div><div class="k">Idiomas</div><div class="v">Español · Inglés</div></div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section>
+      <div class="wrap">
+        <div class="example-block reveal">
+          <div>
+            <div class="ex-eyebrow">Ejemplo · llegada a casa</div>
+            <h3>Un viernes a las 19:00.</h3>
+            <p>María vuelve del trabajo. La app detecta el auto a 80 metros del edificio y dispara una secuencia coordinada que termina cuando ella entra al apartamento.</p>
+            <p class="muted" style="font-size:13.5px;">Cada paso es opcional y configurable por el residente. Sin escenas no hay automatización: nada se mueve sin permiso explícito.</p>
+          </div>
+          <div class="ex-flow" aria-label="Flujo paso a paso">
+            <div class="ex-step"><span class="t">19:00</span><span class="d"><strong>Auto detectado.</strong><span class="muted">Portón del garage se abre. Luces del nivel de cochera se encienden.</span></span></div>
+            <div class="ex-step"><span class="t">19:01</span><span class="d"><strong>Ascensor llamado.</strong><span class="muted">Se posiciona en el subsuelo. La climatización del apto sube a 22°.</span></span></div>
+            <div class="ex-step"><span class="t">19:02</span><span class="d"><strong>Puerta del apto.</strong><span class="muted">Apertura por NFC. Luces del living encendidas al 60%.</span></span></div>
+            <div class="ex-step"><span class="t">19:02</span><span class="d"><strong>Bienvenida.</strong><span class="muted">Notificación: SUM reservado para el sábado a las 20h. Recordatorio activo.</span></span></div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="features-section">
+      <div class="wrap">
+        <div class="section-head reveal">
+          <span class="eyebrow">Funcionalidades</span>
+          <h2>Todo lo que la app puede hacer.</h2>
+          <p class="lede">Organizado por momento de uso. Cada feature está disponible desde el día de entrega.</p>
+        </div>
+
+        <div class="group reveal">
+          <div class="cat">
+            <h3><span class="key">H</span> Acceso sin fricción</h3>
+            <ul>
+              <li>Entrada al edificio sin llave</li>
+              <li>Acceso al apartamento sin llave</li>
+              <li>Apertura del garage desde la app</li>
+              <li>Invitaciones digitales para visitas</li>
+              <li>Acceso temporal para mucamas</li>
+              <li>Acceso temporal para paseadores</li>
+              <li>Acceso temporal para repartidores</li>
+              <li>Apertura remota para entregas verificadas</li>
+            </ul>
+          </div>
+
+          <div class="cat">
+            <h3><span class="key">I</span> Control del apartamento</h3>
+            <ul>
+              <li>Control de luces por ambiente</li>
+              <li>Control de aire acondicionado</li>
+              <li>Control de calefacción</li>
+              <li>Control de cortinas y persianas automáticos</li>
+              <li>Luces de cortesía nocturnas en pasillos</li>
+              <li>Escena de salir de casa (apagado parcial)</li>
+              <li>Ajustes según clima exterior</li>
+              <li>Ajustes según presencia</li>
+            </ul>
+          </div>
+
+          <div class="cat">
+            <h3><span class="key">J</span> Llegada a casa</h3>
+            <ul>
+              <li>Llamado automático del ascensor por proximidad</li>
+              <li>Climatización activada antes de llegar</li>
+              <li>Apertura del portón al detectar el auto</li>
+              <li>Cierre automático post salida</li>
+              <li>Iluminación del garage al entrar el auto</li>
+              <li>Llamada al ascensor al salir del apto</li>
+            </ul>
+          </div>
+
+          <div class="cat">
+            <h3><span class="key">K</span> Reservas para residentes</h3>
+            <ul>
+              <li>Reserva desde la app</li>
+              <li>Acceso automático al espacio reservado</li>
+              <li>Activación de iluminación al llegar</li>
+              <li>Activación de clima al llegar</li>
+              <li>Recordatorios antes de la reserva</li>
+              <li>Predicción de disponibilidad</li>
+              <li>Accesos QR para invitados</li>
+            </ul>
+          </div>
+
+          <div class="cat">
+            <h3><span class="key">L</span> Eficiencia y calidad ambiental</h3>
+            <ul>
+              <li>Visualización de consumo del apto</li>
+              <li>Histórico de consumo</li>
+              <li>Alertas de consumo inusual</li>
+              <li>Sensor de calidad del aire</li>
+              <li>Detección de monóxido</li>
+            </ul>
+          </div>
+
+          <div class="cat">
+            <h3><span class="key">M</span> Portero e intercom digital</h3>
+            <ul>
+              <li>Comunicación con portero desde la app</li>
+              <li>Apertura de puerta de calle desde el apto</li>
+              <li>Notificación cuando tocan el timbre</li>
+            </ul>
+          </div>
+        </div>
+
+        <div class="subpage-cta reveal">
+          <div>
+            <h3>¿Querés ver la app en acción?</h3>
+            <p>Coordinamos una demo con tu equipo y te mostramos cómo se siente desde el día de entrega. En tu oficina o en un edificio nuestro funcionando.</p>
+          </div>
+          <a href="/#contacto" class="btn btn-primary">Agendar demo <span class="btn-arrow">→</span></a>
+        </div>
+      </div>
+    </section>
+
+  </main>
+  <Footer />
+  <RevealScript />
+</BaseLayout>

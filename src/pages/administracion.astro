@@ -1,0 +1,158 @@
+---
+import BaseLayout from '../layouts/BaseLayout.astro';
+import SubpageNav from '../components/SubpageNav.astro';
+import Footer from '../components/Footer.astro';
+import RevealScript from '../components/RevealScript.astro';
+---
+<BaseLayout title="Panel de administración — Nucleo" description="Una sola pantalla para operar el edificio entero. Accesos, sensores, automatizaciones y reportes en vivo.">
+  <SubpageNav />
+  <main>
+
+    <section class="subpage-hero">
+      <div class="wrap">
+        <div class="reveal">
+          <div class="crumbs">
+            <a href="/">Inicio</a>
+            <span>/</span>
+            <span>Panel administración</span>
+          </div>
+          <h1>El panel que opera el edificio entero.</h1>
+          <p class="lede">Accesos físicos, automatización de espacios comunes, reservas, seguridad, eficiencia, redes y dashboard. Una sola pantalla. Trazabilidad completa.</p>
+          <div class="meta">
+            <div><div class="k">Acceso</div><div class="v">Web · responsive</div></div>
+            <div><div class="k">Permisos</div><div class="v">Roles granulares</div></div>
+            <div><div class="k">Integración</div><div class="v">APIs documentadas</div></div>
+            <div><div class="k">Auditoría</div><div class="v">Logs exportables</div></div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section>
+      <div class="wrap">
+        <div class="example-block reveal">
+          <div>
+            <div class="ex-eyebrow">Ejemplo · martes a las 14:02</div>
+            <h3>Una alerta que se resuelve sola.</h3>
+            <p>El sensor de fuga del subsuelo detecta humedad anormal en la zona de bombas. El sistema corta el suministro, abre un ticket de mantenimiento y notifica a los residentes afectados — todo antes de que la administración termine de leer la alerta.</p>
+            <p class="muted" style="font-size:13.5px;">Cada acción automática queda registrada en el log auditable. La administración puede revertir o ajustar reglas en cualquier momento.</p>
+          </div>
+          <div class="ex-flow" aria-label="Flujo paso a paso">
+            <div class="ex-step"><span class="t">14:02:08</span><span class="d"><strong>Sensor de fuga detecta humedad.</strong><span class="muted">Subsuelo · zona bombas. Lectura 3.2× sobre baseline.</span></span></div>
+            <div class="ex-step"><span class="t">14:02:09</span><span class="d"><strong>Bomba afectada se desactiva.</strong><span class="muted">Suministro cortado por seguridad. Las otras bombas siguen operando.</span></span></div>
+            <div class="ex-step"><span class="t">14:02:11</span><span class="d"><strong>Ticket abierto en mantenimiento.</strong><span class="muted">Categoría: agua. Prioridad: alta. Asignación: equipo guardia.</span></span></div>
+            <div class="ex-step"><span class="t">14:02:14</span><span class="d"><strong>Notificación a la administración.</strong><span class="muted">Push + email. Resumen de acciones tomadas y próximos pasos.</span></span></div>
+            <div class="ex-step"><span class="t">14:02:20</span><span class="d"><strong>Aviso a residentes afectados.</strong><span class="muted">Pisos 1 al 4 · interrupción estimada de 90 min.</span></span></div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="features-section">
+      <div class="wrap">
+        <div class="section-head reveal">
+          <span class="eyebrow">Funcionalidades</span>
+          <h2>Todo lo que la administración opera.</h2>
+          <p class="lede">Siete categorías. Cada una configurable por roles, con escenarios y reglas que la administración define una vez y el edificio respeta para siempre.</p>
+        </div>
+
+        <div class="group reveal">
+          <div class="cat">
+            <h3><span class="key">A</span> Control de accesos físicos</h3>
+            <ul>
+              <li>Acceso al edificio sin llave (NFC, QR, app)</li>
+              <li>Apertura de portones de garage desde la app</li>
+              <li>Reconocimiento de matrículas en garage</li>
+              <li>Logs de quién entró dónde y cuándo</li>
+              <li>Acceso a zonas comunes con permisos por usuario</li>
+              <li>Acceso temporal para visitas con expiración</li>
+              <li>Acceso programado para servicios</li>
+              <li>Registro de entrada y salida de vehículos</li>
+              <li>Cocheras de visitas con tiempo asignado</li>
+              <li>Detección de ocupación de cocheras en tiempo real</li>
+            </ul>
+          </div>
+
+          <div class="cat">
+            <h3><span class="key">B</span> Automatización de espacios comunes</h3>
+            <ul>
+              <li>Encendido y apagado automático de luces</li>
+              <li>Climatización automática en reserva de espacios</li>
+              <li>Cortinas automáticas según luz natural</li>
+              <li>Ajuste de iluminación según luz natural</li>
+              <li>Atenuado automático sin presencia</li>
+              <li>Climatización inteligente de zonas comunes</li>
+              <li>Control horario de bombas de agua</li>
+              <li>Riego automatizado de patios y jardines</li>
+              <li>Escenarios estéticos en patio</li>
+              <li>Escenarios estéticos en accesos y hall</li>
+              <li>Iluminación arquitectónica programable</li>
+            </ul>
+          </div>
+
+          <div class="cat">
+            <h3><span class="key">C</span> Reservas de amenities</h3>
+            <ul>
+              <li>Reservas de salones (SUM, gym, parrilla)</li>
+              <li>Escenarios predefinidos por reserva</li>
+              <li>Accesos a espacios reservados por app o NFC</li>
+              <li>Predicción de disponibilidad real</li>
+            </ul>
+          </div>
+
+          <div class="cat">
+            <h3><span class="key">D</span> Seguridad, sensores y cámaras</h3>
+            <ul>
+              <li>Integración con cámaras del edificio</li>
+              <li>Alertas en tiempo real ante eventos</li>
+              <li>Detección de merodeo</li>
+              <li>Sensores de fugas de agua</li>
+              <li>Sensores de fugas de gas</li>
+              <li>Sensores de CO2 o incendios</li>
+            </ul>
+          </div>
+
+          <div class="cat">
+            <h3><span class="key">E</span> Eficiencia energética</h3>
+            <ul>
+              <li>Identificación de desperdicios energéticos</li>
+              <li>Alertas de consumo anormal</li>
+            </ul>
+          </div>
+
+          <div class="cat">
+            <h3><span class="key">F</span> Conectividad y redes</h3>
+            <ul>
+              <li>Infraestructura de wifi mesh del edificio</li>
+              <li>Red de invitados separada con expiración</li>
+              <li>Red exclusiva para amenities con QR temporal</li>
+              <li>Red dedicada para domótica (aislada)</li>
+              <li>Monitoreo de salud de la red</li>
+              <li>Priorización de tráfico en zonas críticas</li>
+            </ul>
+          </div>
+
+          <div class="cat">
+            <h3><span class="key">G</span> Dashboard operativo</h3>
+            <ul>
+              <li>Estado en vivo del edificio</li>
+              <li>Consumo energético en tiempo real</li>
+              <li>Eventos de seguridad en tiempo real</li>
+            </ul>
+          </div>
+        </div>
+
+        <div class="subpage-cta reveal">
+          <div>
+            <h3>¿Querés ver el panel en acción?</h3>
+            <p>Coordinamos una demo con el equipo de tu administración y te mostramos cómo se opera un edificio nuevo desde el día uno.</p>
+          </div>
+          <a href="/#contacto" class="btn btn-primary">Agendar demo <span class="btn-arrow">→</span></a>
+        </div>
+      </div>
+    </section>
+
+  </main>
+  <Footer />
+  <RevealScript />
+</BaseLayout>
